@@ -33,7 +33,7 @@ body {
 
 .page {
   flex: 1 1 auto;
-  padding-top: 100px;
+  padding-top: 0px;
 }
 
 h2 {
@@ -58,7 +58,7 @@ p {
   height: 80px;
   background-color: $black;
   color: #fff;
-
+	z-index: 50;
   &__container {
     display: flex;
     justify-content: space-between;
@@ -162,4 +162,24 @@ section {
 
 .header__link a:hover {
   color: white;
+}
+
+.intro {
+	background-color: #0000004a;
+	background-image: url("../img/bg.webp");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	height: 100dvh;
+	background-blend-mode: multiply;
+	&__title {
+		position: absolute;
+		max-width: 80vw;
+		bottom: 10vh;
+		font-size: 42px;
+		color: #fff;
+		font-weight: 700;
+		line-height: 1.3;
+	}
 }
