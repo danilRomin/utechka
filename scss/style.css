@@ -72,7 +72,7 @@ p {
 }
 @media (max-width: 1110px) {
   .header {
-    height: calc(40px + 40 * (100vw - 320px) / 790);
+    height: calc(45px + 35 * (100vw - 320px) / 790);
   }
 }
 @media (max-width: 448.98px) {
@@ -118,6 +118,12 @@ p {
   justify-content: flex-end;
   align-items: center;
   margin-top: 20px;
+}
+@media (max-width: 448.98px) {
+  .header__menu {
+    margin-top: 0px;
+    justify-content: center;
+  }
 }
 .header__list {
   display: flex;

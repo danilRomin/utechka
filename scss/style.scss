@@ -60,7 +60,7 @@ p {
 .header {
   position: fixed;
   width: 100%;
-	@include adaptiv-value(height, 80, 40, 1);
+	@include adaptiv-value(height, 80, 45, 1);
   background-color: $black;
   color: #fff;
 	z-index: 50;
@@ -75,7 +75,6 @@ p {
 		padding: 0 15px;
 		@media (max-width: 448.98px) {
 			flex-direction: column;
-
 		}
   }
 
@@ -96,7 +95,10 @@ p {
     justify-content: flex-end;
     align-items: center;
 		margin-top: 20px;
-
+		@media (max-width: 448.98px) {
+			margin-top: 0px;
+			justify-content: center;
+		}
   }
 
   &__list {
